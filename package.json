@@ -1,6 +1,6 @@
 {
   "name": "actionkey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates a frozen namespaced object enum for events/actions/messages",
   "main": "index.js",
   "scripts": {
