@@ -32,7 +32,23 @@ const EVENTS = actionkey('APP', [
 
 ## Usage
 
-`actionkey` requires a namespace to append to keys and will return an object with the relevant values mapped to the keys plus the namespace. It can accept either an array of keys or an object to map.
+`actionkey` just needs an array or an object of keys to mirror, the returned object will be frozen.
+
+```js
+const ACTIONS = actionkey([
+  'RESET',
+  'APPEND',
+  'DELETE'
+])
+
+const ACTIONS = actionkey({
+  'RESET': null,
+  'APPEND': null,
+  'DELETE': null
+})
+```
+
+`actionkey` can also accept namespace to append to keys and will return an object with the relevant values mapped to the keys plus the namespace. It can accept either an array of keys or an object to map.
 
 ```js
 const ACTIONS = actionkey('ACTION', [
