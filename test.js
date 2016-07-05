@@ -36,3 +36,14 @@ tape('It should return a frozen object', t => {
   action.FOO = 'BAR'
   t.deepEqual(output, actionkey(['FOO']))
 })
+
+tape('It should throw an error if invalid arguments are passed', t => {
+  t.plan(2)
+
+  t.throws(() => {
+    actionkey(null)
+  })
+  t.throws(() => {
+    actionkey('wizz', 'pop')
+  })
+})
