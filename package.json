@@ -1,0 +1,26 @@
+{
+  "name": "actionkey",
+  "version": "0.0.0",
+  "description": "Creates a namespaced object enum for events/actions/messages",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "keywords": [
+    "namespace",
+    "action",
+    "key",
+    "mirror",
+    "events",
+    "messages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattstyles/actionkey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattstyles/actionkey"
+  },
+  "author": "Matt Styles <matt@veryfizzyjelly.com> (http://github.com/mattstyles)",
+  "license": "MIT"
+}
