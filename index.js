@@ -1,4 +1,6 @@
 
+'use strict'
+
 const isArray = require('util').isArray
 
 function fold (name) {
