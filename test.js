@@ -1,4 +1,6 @@
 
+'use strict'
+
 const tape = require('tape')
 const actionkey = require('./')
 
@@ -33,8 +35,9 @@ tape('It should return a frozen object', t => {
   t.plan(1)
 
   let action = actionkey(['FOO'])
-  action.FOO = 'BAR'
-  t.deepEqual(output, actionkey(['FOO']))
+  t.throws(() => {
+    action.FOO = 'BAR'
+  })
 })
 
 tape('It should throw an error if invalid arguments are passed', t => {
