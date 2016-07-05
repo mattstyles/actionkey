@@ -4,7 +4,8 @@
   "description": "Creates a namespaced object enum for events/actions/messages",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js"
+    "lint": "standard index.js",
+    "test": "npm run lint && tape test.js"
   },
   "keywords": [
     "namespace",
@@ -22,5 +23,9 @@
     "url": "https://github.com/mattstyles/actionkey"
   },
   "author": "Matt Styles <matt@veryfizzyjelly.com> (http://github.com/mattstyles)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^7.1.2",
+    "tape": "^4.6.0"
+  }
 }
